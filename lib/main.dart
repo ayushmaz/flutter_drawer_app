@@ -39,6 +39,12 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                 ],
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(10.0),
+                        bottomRight: Radius.circular(10.0)),
+                    gradient:
+                        LinearGradient(colors: [Colors.pink, Colors.purple])),
               ),
             ],
           ),
