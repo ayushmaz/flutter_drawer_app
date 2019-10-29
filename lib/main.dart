@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'DrawerList.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -12,6 +14,7 @@ class MyApp extends StatelessWidget {
           title: Text("Flutter Drawer"),
         ),
         drawer: Drawer(
+          elevation: 11.0,
           child: ListView(
             children: <Widget>[
               UserAccountsDrawerHeader(
@@ -46,6 +49,10 @@ class MyApp extends StatelessWidget {
                     gradient:
                         LinearGradient(colors: [Colors.pink, Colors.purple])),
               ),
+              DrawerList("Search" , Icons.search),
+              DrawerList("Music" , Icons.audiotrack),
+              DrawerList("Code" , Icons.code),
+              DrawerList("Bar" , Icons.local_bar)
             ],
           ),
         ),
