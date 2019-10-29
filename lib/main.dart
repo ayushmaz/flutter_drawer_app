@@ -49,7 +49,7 @@ class MyApp extends StatelessWidget {
                     gradient:
                         LinearGradient(colors: [Colors.pink, Colors.purple])),
               ),
-              DrawerList("Search" , Icons.search),
+              DrawerList("Movie" , Icons.movie),
               DrawerList("Music" , Icons.audiotrack),
               DrawerList("Code" , Icons.code),
               DrawerList("Bar" , Icons.local_bar)
